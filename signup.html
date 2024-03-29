@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="signup-container">
+        <h1>Create Account</h1>
+        <p>Join us now!</p>
+        <form id="signupForm">
+            <input type="text" id="fullname" class="form-control" placeholder="Full Name" required>
+            <input type="email" id="email" class="form-control" placeholder="Email" required>
+            <input type="password" id="password" class="form-control" placeholder="Password" required>
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+        <p class="login-link">Already have an account? <a href="index.html">Login</a></p>
+        <div class="social-login">
+            <p>Or sign up with:</p>
+            <button class="btn-social" onclick="signInWithGoogle()">Google</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function signInWithGoogle() {
+            // Perform sign-up with Google authentication here
+            alert("Signing up with Google...");
+        }
+    </script>
+</body>
+</html>
